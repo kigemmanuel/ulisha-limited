@@ -266,7 +266,7 @@ var OurService_default = OurService;
 
 // public/views/sections/ContactSection.jsx
 var ContactSection = () => {
-  return /* @__PURE__ */ snapp.create(Section_default, { className: "bg-gradient-to-br from-cyan-500 via-blue-600 to-indigo-700 space-y-16 pt-14" }, /* @__PURE__ */ snapp.create("div", { className: "flex flex-col md:flex-row-reverse" }, /* @__PURE__ */ snapp.create("div", { class: "bg-white px-6 py-10 md:py-12 md:w-1/2 rounded-t-2xl md:rounded-l-none md:rounded-r-2xl" }, /* @__PURE__ */ snapp.create("div", { class: "text-center mb-10" }, /* @__PURE__ */ snapp.create("h2", { class: "font-bold text-3xl md:text-4xl text-slate-900 mb-2" }, "CONTACT US"), /* @__PURE__ */ snapp.create("p", { class: "text-slate-600" }, "We'd love to hear from you. Send us a message!")), /* @__PURE__ */ snapp.create("form", { id: "contactForm", class: "space-y-5" }, /* @__PURE__ */ snapp.create("div", { class: "relative" }, /* @__PURE__ */ snapp.create(
+  return /* @__PURE__ */ snapp.create(Section_default, { className: "bg-linear-to-b from-slate-50 to-slate-100 py-16" }, /* @__PURE__ */ snapp.create("div", { className: "container mx-auto max-w-6xl px-4" }, /* @__PURE__ */ snapp.create("div", { className: "text-center mb-12" }, /* @__PURE__ */ snapp.create("h2", { className: "font-bold text-3xl md:text-4xl text-slate-900 mb-3" }, "Contact Us"), /* @__PURE__ */ snapp.create("p", { className: "text-slate-600" }, "We'd love to hear from you. Send us a message!")), /* @__PURE__ */ snapp.create("div", { className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" }, /* @__PURE__ */ snapp.create("div", { className: "bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300" }, /* @__PURE__ */ snapp.create("div", { className: "flex flex-col items-center text-center space-y-4" }, /* @__PURE__ */ snapp.create("div", { className: "w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-2" }, /* @__PURE__ */ snapp.create(Fontawesome, { icon: faPhone, className: "w-8 h-8 text-blue-600" })), /* @__PURE__ */ snapp.create("h3", { className: "text-xl font-semibold text-slate-900" }, "Call Us"), /* @__PURE__ */ snapp.create("p", { className: "text-slate-600" }, "1 (234) 567-891", /* @__PURE__ */ snapp.create("br", null), "1 (234) 987-654"))), /* @__PURE__ */ snapp.create("div", { className: "bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300" }, /* @__PURE__ */ snapp.create("div", { className: "flex flex-col items-center text-center space-y-4" }, /* @__PURE__ */ snapp.create("div", { className: "w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-2" }, /* @__PURE__ */ snapp.create(Fontawesome, { icon: faLocationPin, className: "w-8 h-8 text-blue-600" })), /* @__PURE__ */ snapp.create("h3", { className: "text-xl font-semibold text-slate-900" }, "Location"), /* @__PURE__ */ snapp.create("p", { className: "text-slate-600" }, "121 Rock Street, 21 Avenue,", /* @__PURE__ */ snapp.create("br", null), "New York, NY 92103-9000"))), /* @__PURE__ */ snapp.create("div", { className: "bg-white p-8 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300" }, /* @__PURE__ */ snapp.create("div", { className: "flex flex-col items-center text-center space-y-4" }, /* @__PURE__ */ snapp.create("div", { className: "w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mb-2" }, /* @__PURE__ */ snapp.create(Fontawesome, { icon: faClock, className: "w-8 h-8 text-blue-600" })), /* @__PURE__ */ snapp.create("h3", { className: "text-xl font-semibold text-slate-900" }, "Business Hours"), /* @__PURE__ */ snapp.create("p", { className: "text-slate-600" }, "Mon \u2013 Fri \u2026\u2026 10 am \u2013 8 pm", /* @__PURE__ */ snapp.create("br", null), "Sat, Sun ....\u2026 Closed"))), /* @__PURE__ */ snapp.create("div", { className: "col-span-1 md:col-span-2 lg:col-span-3 bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 p-6 md:p-8" }, /* @__PURE__ */ snapp.create("form", { id: "contactForm", className: "w-full max-w-[92%] lg:max-w-[85%] mx-auto space-y-6" }, /* @__PURE__ */ snapp.create("div", { className: "relative" }, /* @__PURE__ */ snapp.create(
     "input",
     {
       type: "text",
@@ -274,9 +274,9 @@ var ContactSection = () => {
       id: "name",
       placeholder: "Enter your Name",
       required: true,
-      class: "w-full px-5 py-3 bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-200 placeholder:text-slate-400"
+      className: "w-full px-4 py-3 bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 placeholder:text-slate-400"
     }
-  )), /* @__PURE__ */ snapp.create("div", { class: "relative" }, /* @__PURE__ */ snapp.create(
+  )), /* @__PURE__ */ snapp.create("div", { className: "relative" }, /* @__PURE__ */ snapp.create(
     "input",
     {
       type: "email",
@@ -284,9 +284,9 @@ var ContactSection = () => {
       id: "email",
       placeholder: "Enter a valid email address",
       required: true,
-      class: "w-full px-5 py-3 bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-200 placeholder:text-slate-400"
+      className: "w-full px-4 py-3 bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 placeholder:text-slate-400"
     }
-  )), /* @__PURE__ */ snapp.create("div", { class: "relative" }, /* @__PURE__ */ snapp.create(
+  )), /* @__PURE__ */ snapp.create("div", { className: "relative" }, /* @__PURE__ */ snapp.create(
     "textarea",
     {
       name: "message",
@@ -294,16 +294,16 @@ var ContactSection = () => {
       placeholder: "Enter your message",
       rows: "6",
       required: true,
-      class: "w-full px-5 py-4 bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-200 resize-none placeholder:text-slate-400"
+      className: "w-full px-4 py-4 bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none placeholder:text-slate-400"
     }
   )), /* @__PURE__ */ snapp.create(
     "button",
     {
       type: "submit",
-      class: "w-full bg-gradient-to-r bg-blue-600 hover:bg-blue-800 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 uppercase tracking-wide"
+      className: "w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-200"
     },
-    "Submit"
-  ), /* @__PURE__ */ snapp.create("p", { class: "text-xs text-center text-slate-500 mt-4" }, "This site is protected by reCAPTCHA and the Google", /* @__PURE__ */ snapp.create("a", { href: "https://policies.google.com/privacy", class: "text-indigo-600 hover:underline" }, "Privacy Policy"), " and", /* @__PURE__ */ snapp.create("a", { href: "https://policies.google.com/terms", class: "text-indigo-600 hover:underline" }, "Terms of Service"), " apply."))), /* @__PURE__ */ snapp.create("div", { className: "bg-slate-100 flex flex-col justify-center items-center py-10 px-4 md:w-1/2 space-y-8 rounded-b-2xl md:rounded-r-none md:rounded-l-2xl" }, /* @__PURE__ */ snapp.create("div", { className: "space-y-8 md:space-y-10" }, /* @__PURE__ */ snapp.create("div", { class: "flex flex-row gap-x-5 items-start" }, /* @__PURE__ */ snapp.create("div", { class: "flex-shrink-0 w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center" }, /* @__PURE__ */ snapp.create(Fontawesome, { icon: faPhone, className: "w-5 h-5 text-blue-600" })), /* @__PURE__ */ snapp.create("div", { class: "space-y-2" }, /* @__PURE__ */ snapp.create("h2", { class: "text-xl font-semibold text-slate-900" }, "Call Us"), /* @__PURE__ */ snapp.create("p", { class: "text-slate-600 leading-relaxed" }, "1 (234) 567-891", /* @__PURE__ */ snapp.create("br", null), "1 (234) 987-654"))), /* @__PURE__ */ snapp.create("div", { class: "flex flex-row gap-x-5 items-start" }, /* @__PURE__ */ snapp.create("div", { class: "flex-shrink-0 w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center" }, /* @__PURE__ */ snapp.create(Fontawesome, { icon: faLocationPin, className: "w-5 h-5 text-blue-600" })), /* @__PURE__ */ snapp.create("div", { class: "space-y-2" }, /* @__PURE__ */ snapp.create("h2", { class: "text-xl font-semibold text-slate-900" }, "Location"), /* @__PURE__ */ snapp.create("p", { class: "text-slate-600 leading-relaxed" }, "121 Rock Street, 21 Avenue,", /* @__PURE__ */ snapp.create("br", null), "New York, NY 92103-9000"))), /* @__PURE__ */ snapp.create("div", { class: "flex flex-row gap-x-5 items-start" }, /* @__PURE__ */ snapp.create("div", { class: "flex-shrink-0 w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center" }, /* @__PURE__ */ snapp.create(Fontawesome, { icon: faClock, className: "w-5 h-5 text-blue-600" })), /* @__PURE__ */ snapp.create("div", { class: "space-y-2" }, /* @__PURE__ */ snapp.create("h2", { class: "text-xl font-semibold text-slate-900" }, "Business Hours"), /* @__PURE__ */ snapp.create("p", { class: "text-slate-600 leading-relaxed" }, "Mon \u2013 Fri \u2026\u2026 10 am \u2013 8 pm", /* @__PURE__ */ snapp.create("br", null), "Sat, Sun ....\u2026 Closed")))))));
+    "Send Message"
+  ), /* @__PURE__ */ snapp.create("p", { className: "text-xs text-center text-slate-500 mt-4" }, "This site is protected by reCAPTCHA and the Google", " ", /* @__PURE__ */ snapp.create("a", { href: "https://policies.google.com/privacy", className: "text-blue-600 hover:underline" }, "Privacy Policy"), " and", " ", /* @__PURE__ */ snapp.create("a", { href: "https://policies.google.com/terms", className: "text-blue-600 hover:underline" }, "Terms of Service"), " apply."))))));
 };
 var ContactSection_default = ContactSection;
 
