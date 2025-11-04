@@ -15,13 +15,13 @@ const NavBar = () => {
 
     return (
         <header className="bg-white fixed top-0 left-0 right-0 z-50 transition-all duration-300 shadow-xs">
-            <Section className="py-3">
+            <Section className="py-3 md:py-6">
                 <div className="flex items-center justify-between">
                     {/* Logo */}
                     <div className="flex items-center">
                         <a href="/" className="text-2xl font-bold">
                             <span className="text-blue-600">Ulisha</span>
-                            <span>Store</span>
+                            <span>Limited</span>
                         </a>
                     </div>
 

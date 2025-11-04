@@ -34,7 +34,7 @@ fetch("https://api.github.com/orgs/ulisha-limited/members")
         });
     });
 
-    return <Section>
+    return <Section className="py-6">
         <div className="space-y-6">
             <div className="text-center">
                 <SectionTitle>

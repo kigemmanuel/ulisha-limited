@@ -11,7 +11,7 @@ const Footer = () => {
                     {/* Brand Section */}
                     <div className="space-y-4">
                         <h2 className="text-2xl font-bold">
-                            <span className="text-orange-500">Ulisha</span>
+                            <span className="text-blue-600">Ulisha</span>
                             <span className="text-white">Limited</span>
                         </h2>
                         <p className="text-sm leading-relaxed">
@@ -47,9 +47,9 @@ const Footer = () => {
                         <div>
                             <h3 className="text-white text-lg font-semibold mb-4">Links</h3>
                             <ul className="space-y-3">
-                                <li><a href="#" className="hover:text-orange-500 transition">Home</a></li>
-                                <li><a href="#" className="hover:text-orange-500 transition">About Us</a></li>
-                                <li><a href="#" className="hover:text-orange-500 transition">Sitemap</a></li>
+                                <li><a href="#" className="hover:text-blue-600 transition">Home</a></li>
+                                <li><a href="#" className="hover:text-blue-600 transition">About Us</a></li>
+                                <li><a href="#" className="hover:text-blue-600 transition">Sitemap</a></li>
                             </ul>
                         </div>
 
@@ -57,8 +57,8 @@ const Footer = () => {
                         <div>
                             <h3 className="text-white text-lg font-semibold mb-4">Legal</h3>
                             <ul className="space-y-3">
-                                <li><a href="#" className="hover:text-orange-500 transition">Terms</a></li>
-                                <li><a href="#" className="hover:text-orange-500 transition">Privacy Policy</a></li>
+                                <li><a href="#" className="hover:text-blue-600 transition">Terms</a></li>
+                                <li><a href="#" className="hover:text-blue-600 transition">Privacy Policy</a></li>
                             </ul>
                         </div>
                     </div>
@@ -68,19 +68,19 @@ const Footer = () => {
                         <h3 className="text-white text-lg font-semibold mb-4">Contact Info</h3>
                         <ul className="space-y-3">
                             <li className="flex items-start gap-3">
-                                <Icon icon={faLocationDot} className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" />
+                                <Icon icon={faLocationDot} className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
                                 <span>Delta, Nigeria</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <Icon icon={faPhone} className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" />
+                                <Icon icon={faPhone} className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
                                 <span>+234 913 478 1219</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <Icon icon={faEnvelope} className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" />
+                                <Icon icon={faEnvelope} className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
                                 <span>support@ulishastore.com</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <Icon icon={faClock} className="w-4 h-4 text-orange-500 mt-0.5 flex-shrink-0" />
+                                <Icon icon={faClock} className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
                                 <span>Mon-Sat: 8AM - 6PM</span>
                             </li>
                         </ul>
