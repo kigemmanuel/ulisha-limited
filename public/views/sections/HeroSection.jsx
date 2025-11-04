@@ -31,7 +31,7 @@ const HeroSection = () => {
     }
   ]
 
-    return <Section className="flex flex-col align-middle mt-14 lg:mt-20">
+    return <Section className="flex flex-col align-middle py-6 mt-14 lg:mt-20">
       <div className="flex flex-col my-auto gap-y-4 xl:gap-6">
         
         {/* Main Hero Section */}
@@ -52,7 +52,7 @@ const HeroSection = () => {
           </div>
 
           {/* Bubble text */}
-          <div className="flex flex-col flex-[1] gap-y-5 my-auto items-center">
+          <div className="flex flex-col flex-[1] gap-y-5 my-auto items-center md:items-start lg:items-end">
             {BubbletextData.map(data => <BubbleText data={data} />)}
           </div>
         </div>

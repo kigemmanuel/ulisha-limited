@@ -1,4 +1,5 @@
 import { ServiceCard } from "../components/Card"
+import{ SectionTitle } from "../components/Headings"
 import Section, { CardHolder } from "../components/Section"
 
 const OurServiceData = [
@@ -20,10 +21,12 @@ const OurServiceData = [
 ]
 
 const OurService = () => {
-    return <Section className="bg-slate-100 space-y-16 pt-14">
+    return <Section className="space-y-16 py-14">
         <div class="text-center">
             <p class="text-blue-600 font-semibold text-sm uppercase tracking-wider mb-3">Our Services</p>
-            <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">What We Offer</h2>
+            <SectionTitle>
+                What We Offer
+            </SectionTitle>
             <p class="text-slate-700 max-w-2xl mx-auto text-lg">Comprehensive solutions tailored to bring your digital vision to life</p>
         </div>
 

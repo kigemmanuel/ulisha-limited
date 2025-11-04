@@ -1,88 +1,78 @@
-import { faAlarmClock, faClock, faLocation, faLocationPin, faPhone, faTimes, faTimesCircle } from "@fortawesome/free-solid-svg-icons"
-import Section from "../components/Section"
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons"
 import { Fontawesome as Icon } from "snapp-icons"
+import Section from "../components/Section"
+import { SectionTitle } from "../components/Headings"
+import ContactInfo from "../components/ContactInfo"
 
 const ContactSection = () => {
-    return <Section className="bg-gradient-to-br from-cyan-500 via-blue-600 to-indigo-700 space-y-16 pt-14">
-        <div className="flex flex-col md:flex-row-reverse">
-            <div class="bg-white px-6 py-10 md:py-12 md:w-1/2 rounded-t-2xl md:rounded-l-none md:rounded-r-2xl">
-                <div class="text-center mb-10">
-                    <h2 class="font-bold text-3xl md:text-4xl text-slate-900 mb-2">CONTACT US</h2>
-                    <p class="text-slate-600">We'd love to hear from you. Send us a message!</p>
-                </div>
-                <form id="contactForm" class="space-y-5">
-                    <div class="relative">
+    return <Section className="bg-slate-50 space-y-16 pt-14 pb-20">
+        <div className="text-center mb-10">
+            <SectionTitle>
+                Contact Us
+            </SectionTitle>
+            <p className="text-slate-600">We'd love to hear from you. Send us a message!</p>
+        </div>
+
+        <div className="mx-auto space-y-5 md:space-y-10">
+
+            {/* Contact Info */}
+            <ContactInfo />
+
+            {/* Main Form Card */}
+            <div className="bg-white px-4 py-10 lg:px-12 lg:py-12 rounded-2xl shadow-lg max-w-2xl 2xl:max-w-4xl mx-auto">
+                <h3 className="text-2xl font-bold text-slate-900 mb-2">Send us a message</h3>
+                <p className="text-slate-600 mb-8">Fill out the form below and we'll get back to you within 24 hours.</p>
+                
+                <form id="contactForm" className="space-y-5">
+                    <div className="relative">
                         <input
                             type="text"
                             name="name"
                             id="name"
                             placeholder="Enter your Name"
                             required
-                            class="w-full px-5 py-3 bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-200 placeholder:text-slate-400"
+                            className="w-full px-5 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 placeholder:text-slate-400"
                         />
                     </div>
-                    <div class="relative">
+                    <div className="relative">
                         <input
                             type="email"
                             name="email"
                             id="email"
                             placeholder="Enter a valid email address"
                             required
-                            class="w-full px-5 py-3 bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-200 placeholder:text-slate-400"
+                            className="w-full px-5 py-3 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 placeholder:text-slate-400"
                         />
                     </div>
-                    <div class="relative">
+                    <div className="relative">
                         <textarea
                             name="message"
                             id="message"
                             placeholder="Enter your message"
-                            rows="6"
+                            rows="5"
                             required
-                            class="w-full px-5 py-4 bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-200 resize-none placeholder:text-slate-400"
+                            className="w-full px-5 py-4 bg-slate-50 border border-slate-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 resize-none placeholder:text-slate-400"
                         ></textarea>
                     </div>
                     <button 
                         type="submit"
-                        class="w-full bg-gradient-to-r bg-blue-600 hover:bg-blue-800 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 uppercase tracking-wide"
+                        className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 uppercase tracking-wide"
                     >
-                        Submit
+                        Send Message
                     </button>
-                    <p class="text-xs text-center text-slate-500 mt-4">
+                    <p className="text-xs text-center text-slate-500 mt-4">
                         This site is protected by reCAPTCHA and the Google 
-                        <a href="https://policies.google.com/privacy" class="text-indigo-600 hover:underline">Privacy Policy</a> and 
-                        <a href="https://policies.google.com/terms" class="text-indigo-600 hover:underline">Terms of Service</a> apply.
+                        <a href="https://policies.google.com/privacy" className="text-blue-600 hover:underline"> Privacy Policy</a> and 
+                        <a href="https://policies.google.com/terms" className="text-blue-600 hover:underline"> Terms of Service</a> apply.
                     </p>
                 </form>
             </div>
-            <div className="bg-slate-100 flex flex-col justify-center items-center py-10 px-4 md:w-1/2 space-y-8 rounded-b-2xl md:rounded-r-none md:rounded-l-2xl">
-                <div className="space-y-8 md:space-y-10">
-                    <div class="flex flex-row gap-x-5 items-start">
-                        <div class="flex-shrink-0 w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center">
-                            <Icon icon={faPhone} className="w-5 h-5 text-blue-600" />
-                        </div>
-                        <div class="space-y-2">
-                            <h2 class="text-xl font-semibold text-slate-900">Call Us</h2>
-                            <p class="text-slate-600 leading-relaxed">1 (234) 567-891<br />1 (234) 987-654</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-row gap-x-5 items-start">
-                        <div class="flex-shrink-0 w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center">
-                            <Icon icon={faLocationPin} className="w-5 h-5 text-blue-600" />
-                        </div>
-                        <div class="space-y-2">
-                            <h2 class="text-xl font-semibold text-slate-900">Location</h2>
-                            <p class="text-slate-600 leading-relaxed">121 Rock Street, 21 Avenue,<br />New York, NY 92103-9000</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-row gap-x-5 items-start">
-                        <div class="flex-shrink-0 w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center">
-                            <Icon icon={faClock} className="w-5 h-5 text-blue-600" />
-                        </div>
-                        <div class="space-y-2">
-                            <h2 class="text-xl font-semibold text-slate-900">Business Hours</h2>
-                            <p class="text-slate-600 leading-relaxed">Mon – Fri …… 10 am – 8 pm<br />Sat, Sun ....… Closed</p>
-                        </div>
-                    </div>
+
+            {/* Location Info - Bottom */}
+            <div className="mt-12 text-center">
+                <div className="inline-flex items-center gap-3 text-slate-600">
+                    <Icon icon={faLocationDot} className="w-5 h-5 text-blue-600" />
+                    <p>Delta, Nigeria</p>
                 </div>
             </div>
         </div>

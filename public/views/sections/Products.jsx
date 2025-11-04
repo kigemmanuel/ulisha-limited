@@ -3,6 +3,7 @@ import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons"
 import { Fontawesome as Icon } from "snapp-icons"
 import { ProductCard } from "../components/Card"
 import { faShop, faBriefcase, faMicrochip } from "@fortawesome/free-solid-svg-icons"
+import { SectionTitle } from "../components/Headings"
 
 const productData = [
     {
@@ -23,9 +24,11 @@ const productData = [
 ]
 
 const AboutUs = () => {
-    return <Section className="bg-slate-100 space-y-16 pt-14">
+    return <Section className="space-y-16 pt-6">
         <div className="text-center space-y-6 text-slate-800">
-            <h1 className="font-semibold text-4xl lg:text-5xl text-blue-600">About Ulisha Limited</h1>
+            <SectionTitle>
+                About Ulisha Limited
+            </SectionTitle>
             <p className="text-sm lg:text-md xl:text-lg font-semibold leading-relaxed text-slate-900 mx-auto lg:max-w-[70%]">
               <Icon icon={faQuoteLeft} className="inline align-top h-3 mr-1" />
               We build the digital backbone for market efficiency, connecting households to cost-effective products and empowering local businesses with proprietary tech.

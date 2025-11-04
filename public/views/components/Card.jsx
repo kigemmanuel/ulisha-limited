@@ -1,7 +1,8 @@
+import { faLink } from "@fortawesome/free-solid-svg-icons";
 import { Fontawesome as Icon } from "snapp-icons"
 
 const ProductCard = ({data}) => {
-  return <article className="group relative bg-white rounded-3xl p-8 py-14 flex flex-col gap-y-6 text-center transition-all duration-500 shadow-2xl overflow-hidden">
+  return <article className="group md:w-80 lg:w-2/5 xl:w-80 2xl:w-96 relative bg-white rounded-3xl p-8 py-14 flex flex-col gap-y-6 text-center transition-all duration-500 shadow-2xl overflow-hidden">
     {/* Background Gradient on Hover */}
     <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 opacity-100duration-500"></div>
     
@@ -24,7 +25,7 @@ const ProductCard = ({data}) => {
 
 const ServiceCard = ({ data }) => {
   return (
-    <article className="group flex flex-col bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
+    <article className="group md:w-80 lg:w-2/5 xl:w-80 2xl:w-96 flex flex-col bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden">
       {/* Image Section with Gradient Overlay */}
       <div className="relative overflow-hidden h-44">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 opacity-10 group-hover:opacity-20 transition-opacity"></div>
@@ -40,7 +41,7 @@ const ServiceCard = ({ data }) => {
       
       {/* Content Section */}
       <div className="flex flex-col flex-grow p-6 space-y-4">
-        <h3 className="text-2xl font-bold text-gray-900">
+        <h3 className="text-2xl font-bold text-gray-900 group-hover:text-blue-600">
           {data.title}
         </h3>
         <p className="text-gray-600 leading-relaxed text-base">
@@ -70,7 +71,44 @@ const ServiceCard = ({ data }) => {
   );
 };
 
+const TeamCard = ({ member }) => {
+
+  return (
+    <article className="bg-white w-60 p-4 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 text-center group hover:-translate-y-2">
+      <div className="relative inline-block mb-4">
+        <img 
+          src={member.avatar_url}
+          alt={member.login}
+          loading="lazy"
+          className="w-28 h-28 rounded-full object-cover border-4 border-gray-100 group-hover:border-blue-500 transition-all duration-300"
+        />
+      </div>
+      <h3 className="text-xl font-bold text-gray-900 mb-1">
+        {member.login}
+      </h3>
+      <p className="text-blue-600 font-medium text-sm mb-3">
+        {member.type}
+      </p>
+
+      {/* <p className="text-gray-600 text-sm mb-4 leading-relaxed">
+        {member.bio || "Used to work at IBM but quit because of robots"}
+      </p> */}
+
+      {/* Social Links */}
+      <div className="flex justify-center gap-3">
+        <a 
+          href={member.html_url} 
+          className="w-9 h-9 rounded-full bg-gray-100 hover:bg-blue-600 flex items-center justify-center text-gray-600 hover:text-white transition-all duration-300"
+        >
+          <Icon icon={faLink} className="text-sm" />
+        </a>
+      </div>
+    </article>
+  );
+};
+
 export {
   ProductCard,
-  ServiceCard
+  ServiceCard,
+  TeamCard
 }
